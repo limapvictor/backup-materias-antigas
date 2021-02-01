@@ -1,0 +1,103 @@
+==492== Memcheck, a memory error detector
+==492== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==492== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==492== Command: ./unit_test ./darci.txt
+==492== Parent PID: 4
+==492== 
+==492== error calling PR_SET_PTRACER, vgdb might block
+==492== 
+==492== HEAP SUMMARY:
+==492==     in use at exit: 5,058 bytes in 462 blocks
+==492==   total heap usage: 793 allocs, 331 frees, 24,662 bytes allocated
+==492== 
+==492== 14 bytes in 2 blocks are definitely lost in loss record 1 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x109B7D: max (binarysearchst.c:358)
+==492==    by 0x109DC0: deleteMax (binarysearchst.c:456)
+==492==    by 0x10A38D: testeOperacoes (unit_test.c:220)
+==492==    by 0x109FEE: main (unit_test.c:81)
+==492== 
+==492== 15 bytes in 2 blocks are definitely lost in loss record 2 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x109B02: min (binarysearchst.c:336)
+==492==    by 0x109D6F: deleteMin (binarysearchst.c:435)
+==492==    by 0x10A365: testeOperacoes (unit_test.c:216)
+==492==    by 0x109FEE: main (unit_test.c:81)
+==492== 
+==492== 16 bytes in 1 blocks are definitely lost in loss record 4 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x1090A0: initST (binarysearchst.c:79)
+==492==    by 0x10A04A: crieST (unit_test.c:118)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== 16 bytes in 1 blocks are definitely lost in loss record 5 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x1090DF: initST (binarysearchst.c:81)
+==492==    by 0x10A04A: crieST (unit_test.c:118)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== 16 bytes in 2 blocks are definitely lost in loss record 6 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x1094BF: put (binarysearchst.c:176)
+==492==    by 0x10A0F5: crieST (unit_test.c:139)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== 24 (16 direct, 8 indirect) bytes in 1 blocks are definitely lost in loss record 7 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x1090BF: initST (binarysearchst.c:80)
+==492==    by 0x10A04A: crieST (unit_test.c:118)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== 24 bytes in 3 blocks are definitely lost in loss record 8 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x109638: put (binarysearchst.c:188)
+==492==    by 0x10A0F5: crieST (unit_test.c:139)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== 480 bytes in 4 blocks are definitely lost in loss record 11 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x1091E3: resize (binarysearchst.c:98)
+==492==    by 0x109538: put (binarysearchst.c:181)
+==492==    by 0x10A0F5: crieST (unit_test.c:139)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== 509 (480 direct, 29 indirect) bytes in 4 blocks are definitely lost in loss record 12 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x1091B9: resize (binarysearchst.c:96)
+==492==    by 0x109538: put (binarysearchst.c:181)
+==492==    by 0x10A0F5: crieST (unit_test.c:139)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== 560 (480 direct, 80 indirect) bytes in 4 blocks are definitely lost in loss record 13 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x1091CE: resize (binarysearchst.c:97)
+==492==    by 0x109538: put (binarysearchst.c:181)
+==492==    by 0x10A0F5: crieST (unit_test.c:139)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== 3,384 bytes in 423 blocks are definitely lost in loss record 14 of 14
+==492==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==492==    by 0x108D92: emalloc (util.c:114)
+==492==    by 0x109566: put (binarysearchst.c:183)
+==492==    by 0x10A0F5: crieST (unit_test.c:139)
+==492==    by 0x109FDE: main (unit_test.c:78)
+==492== 
+==492== LEAK SUMMARY:
+==492==    definitely lost: 4,941 bytes in 447 blocks
+==492==    indirectly lost: 117 bytes in 15 blocks
+==492==      possibly lost: 0 bytes in 0 blocks
+==492==    still reachable: 0 bytes in 0 blocks
+==492==         suppressed: 0 bytes in 0 blocks
+==492== 
+==492== For counts of detected and suppressed errors, rerun with: -v
+==492== ERROR SUMMARY: 11 errors from 11 contexts (suppressed: 0 from 0)

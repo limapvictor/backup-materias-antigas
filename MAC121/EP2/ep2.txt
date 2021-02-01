@@ -1,0 +1,84 @@
+5 4
+-1 0 0 0
+0 0 0 0
+0 0 -1 0
+0 0 0 0
+0 -1 0 0
+10
+ad
+antas
+carn
+casa
+do
+lado
+lua
+os
+soda
+ur
+3 3
+-1 0 0
+0 0 0
+0 -1 0
+5
+ab
+au
+bug
+la
+lua
+3 3
+0 0 0
+-1 0 -1
+0 0 0
+3
+sol
+uao
+lua
+12 8
+-1 -1 0 -1 -1 0 -1 -1
+0 0 0 0 0 0 0 0
+-1 0 0 0 0 0 0 0
+-1 0 0 -1 0 0 -1 0
+0 0 -1 0 0 0 -1 0
+-1 0 0 0 -1 0 0 0
+-1 0 -1 0 0 0 0 0
+-1 0 0 0 -1 0 -1 0
+-1 0 0 -1 0 0 0 0
+0 0 0 0 0 -1 0 0
+0 0 0 0 -1 0 0 0
+-1 0 0 0 0 0 0 0
+32
+ab
+adido
+ai
+al
+am
+atice
+banc
+bo
+boca
+cao
+dam
+dm
+enaltecedor
+es
+et
+indo
+it
+itamaraca
+mito
+mo
+moa
+ms
+mud
+naus
+neonato
+permitir
+remessa
+res
+robustecida
+toast
+trem
+tri
+0 0
+
+
